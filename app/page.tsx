@@ -19,9 +19,16 @@ const skills = [
 ]
 
 const principles = [
-  'Build with clarity',
-  'Make complexity feel simple',
-  'Keep learning in public',
+  'Full-Stack Development',
+  'AI Solutions & Automation',
+  'API & Backend Systems',
+]
+
+const projects = [
+  'ManageKaro – All-in-One Multi-Tenant SaaS Platform for Libraries & Gyms',
+  'Luxury Jewellery E-Commerce Platform (Premium Full-Stack MERN Solution)',
+  'ViralAiHub (Automated AI Blogging Platform)',
+  'Travel Loop (AI-Powered Travel Management Platform)',
 ]
 
 export default function Page() {
@@ -40,7 +47,7 @@ export default function Page() {
             <a className="transition-colors hover:text-blue-600" href="#skills">Skills</a>
             <a className="transition-colors hover:text-blue-600" href="#contact">Contact</a>
           </div>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition-all hover:-translate-y-0.5 hover:border-blue-200 hover:text-blue-700">
+          <a href="https://github.com/ayushkharya87" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition-all hover:-translate-y-0.5 hover:border-blue-200 hover:text-blue-700">
             <Code2 data-icon="inline-start" /> GitHub <ArrowUpRight data-icon="inline-end" />
           </a>
         </nav>
@@ -54,7 +61,7 @@ export default function Page() {
               Building thoughtful software for a world shaped by <span className="text-blue-600">AI.</span>
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-8 text-slate-600">
-              I&apos;m Ayush Kharya. I work across product engineering and AI/LLM technologies, turning ideas into clear, capable digital experiences.
+              I&apos;m Ayush Kharya, a Full-Stack Web & AI Developer. I build SaaS platforms, fintech applications, custom AI solutions, and robust backend systems from the ground up.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <a href="#skills" className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-xl shadow-blue-600/20 transition-all hover:-translate-y-0.5 hover:bg-blue-700">
@@ -115,10 +122,31 @@ export default function Page() {
           <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-4xl">Curious by default. Intentional by design.</h2>
         </div>
         <div className="grid gap-8 text-lg leading-8 text-slate-600">
-          <p>My work sits at the intersection of software development and emerging AI capabilities. I care about the details that make products feel reliable, understandable, and genuinely useful.</p>
-          <p>I enjoy learning new systems, making complex ideas approachable, and shipping work that creates momentum.</p>
+          <p>I collaborate with companies and clients to build high-performance products, including SaaS platforms, fintech applications, and custom AI solutions.</p>
+          <p>Currently working at Six30Labs, I design multi-role dashboards, automated workflows, and robust backends, owning features from database design to production deployment.</p>
           <div className="grid gap-3 border-t border-slate-200 pt-7 sm:grid-cols-3">
             {principles.map((principle) => <div key={principle} className="text-sm font-semibold leading-6 text-slate-800">{principle}</div>)}
+          </div>
+        </div>
+      </section>
+
+      <section id="work" className="border-y border-slate-200/80 bg-white/70">
+        <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8 lg:py-24">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-600">Selected work</p>
+          <div className="mt-3 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+            <h2 className="max-w-2xl text-3xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-4xl">Projects that ship and scale.</h2>
+            <span className="text-sm text-slate-500">Showing 4 projects</span>
+          </div>
+          <div className="mt-10 grid gap-3 md:grid-cols-2">
+            {projects.map((project, index) => (
+              <article key={project} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-900/5">
+                <div className="flex items-start justify-between gap-6">
+                  <span className="text-sm font-semibold text-blue-600">0{index + 1}</span>
+                  <ArrowUpRight className="text-slate-400" />
+                </div>
+                <h3 className="mt-10 max-w-md text-xl font-semibold leading-7 tracking-[-0.02em] text-slate-900">{project}</h3>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -131,8 +159,8 @@ export default function Page() {
             <p className="mt-4 max-w-lg leading-7 text-blue-100">Find more about my work and experience on GitHub.</p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-blue-700 transition hover:bg-blue-50"><Code2 data-icon="inline-start" /> GitHub <ArrowUpRight data-icon="inline-end" /></a>
-            <a href="mailto:" className="inline-flex items-center gap-2 rounded-full border border-blue-300 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-500"><Mail data-icon="inline-start" /> Email me</a>
+            <a href="https://github.com/ayushkharya87" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-blue-700 transition hover:bg-blue-50"><Code2 data-icon="inline-start" /> GitHub <ArrowUpRight data-icon="inline-end" /></a>
+            <a href="mailto:ayushkharya7@gmail.com" className="inline-flex items-center gap-2 rounded-full border border-blue-300 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-500"><Mail data-icon="inline-start" /> Email me</a>
           </div>
         </div>
       </section>
@@ -140,7 +168,7 @@ export default function Page() {
       <footer className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-8">
         <p>© {new Date().getFullYear()} Ayush Kharya</p>
         <div className="flex items-center gap-4">
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="transition-colors hover:text-blue-600"><Code2 aria-label="GitHub" /></a>
+          <a href="https://github.com/ayushkharya87" target="_blank" rel="noreferrer" className="transition-colors hover:text-blue-600"><Code2 aria-label="GitHub" /></a>
           <a href="#top" className="transition-colors hover:text-blue-600">Back to top ↑</a>
         </div>
       </footer>
