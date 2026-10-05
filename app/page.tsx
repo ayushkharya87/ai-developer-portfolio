@@ -60,7 +60,10 @@ export default function Page() {
             <h1 className="max-w-3xl text-5xl font-semibold leading-[1.04] tracking-[-0.05em] text-slate-950 sm:text-6xl lg:text-7xl">
               Building thoughtful software for a world shaped by <span className="text-blue-600">AI.</span>
             </h1>
-            <p className="mt-7 max-w-xl text-lg leading-8 text-slate-600">
+            <p className="mt-5 text-base font-semibold text-blue-700">
+              Available for software and AI projects.
+            </p>
+            <p className="mt-4 max-w-xl text-lg leading-8 text-slate-600">
               I&apos;m Ayush Kharya, a Full-Stack Web & AI Developer. I build SaaS platforms, fintech applications, custom AI solutions, and robust backend systems from the ground up.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
